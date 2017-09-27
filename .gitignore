@@ -1,9 +1,9 @@
-SimplePlatformer/[Ll]ibrary/
-SimplePlatformer/[Tt]emp/
-SimplePlatformer/[Oo]bj/
-SimplePlatformer/[Bb]uild/
-SimplePlatformer/[Bb]uilds/
-SimplePlatformer/Assets/AssetStoreTools*
+Simple-Unity-Platformer/[Ll]ibrary/
+Simple-Unity-Platformer/[Tt]emp/
+Simple-Unity-Platformer/[Oo]bj/
+Simple-Unity-Platformer/[Bb]uild/
+Simple-Unity-Platformer/[Bb]uilds/
+Simple-Unity-Platformer/Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 SimplePlatformer/.vs/
