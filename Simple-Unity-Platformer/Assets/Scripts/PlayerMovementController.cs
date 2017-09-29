@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
-    public float speed = 15f;
-    public float jumpForce = 1000f;
+    public float maxSpeed = 6f;
+    public float jumpForce = 175f;
     public bool jump = false;
     public Transform groundCheck;
     public bool facingLeft = true;
@@ -28,7 +28,7 @@ public class PlayerMovementController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetAxis("Vertical") > 0 && grounded)
+        if (Input.GetButton("Up") && grounded)
         {
             jump = true;
         }
@@ -44,20 +44,30 @@ public class PlayerMovementController : MonoBehaviour
         grounded = Physics2D.Linecast(groundPt1, groundPt2, groundLayerMask);
         Debug.DrawLine(groundPt1, groundPt2, grounded ? Color.cyan : Color.red);
 
-        var horizontalInput = Input.GetAxis("Horizontal") * speed;
+        var left = Input.GetButton("Left");
+        var right = Input.GetButton("Right");
 
-        if (horizontalInput > 0 && facingLeft)
-            Flip();
-        else if (horizontalInput < 0 & !facingLeft)
-            Flip();
+        var horizontalInput = 0f;
+
+        if (right)
+        {
+            horizontalInput = maxSpeed;
+            if(facingLeft)
+                Flip();
+        }
+        else if (left)
+        {
+            horizontalInput = -maxSpeed;
+            if (!facingLeft)
+                Flip();
+        }
 
         if (jump)
         {
             jump = false;
             rb2d.AddForce(new Vector2(0, jumpForce));
         }
-
-        rb2d.AddForce(new Vector3(horizontalInput, 0));
+        rb2d.velocity = new Vector2(horizontalInput, rb2d.velocity.y);
     }
 
     private void Flip()
