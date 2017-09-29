@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bbc11457c5048c94a8a44a42c6368194
-timeCreated: 1506694193
+timeCreated: 1506718903
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -38,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -79,6 +79,22 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -86,10 +102,10 @@ TextureImporter:
       name: sprites_Marisa_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 953
-        width: 71
-        height: 71
+        x: 13
+        y: 965
+        width: 47
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,10 +116,10 @@ TextureImporter:
       name: sprites_Marisa_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 953
-        width: 71
-        height: 71
+        x: 83
+        y: 968
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,10 +130,10 @@ TextureImporter:
       name: sprites_Marisa_2
       rect:
         serializedVersion: 2
-        x: 142
-        y: 953
-        width: 71
-        height: 71
+        x: 155
+        y: 965
+        width: 55
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +144,10 @@ TextureImporter:
       name: sprites_Marisa_3
       rect:
         serializedVersion: 2
-        x: 213
-        y: 953
-        width: 71
-        height: 71
+        x: 224
+        y: 965
+        width: 47
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +158,10 @@ TextureImporter:
       name: sprites_Marisa_4
       rect:
         serializedVersion: 2
-        x: 284
-        y: 953
-        width: 71
-        height: 71
+        x: 295
+        y: 968
+        width: 47
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,38 +172,10 @@ TextureImporter:
       name: sprites_Marisa_5
       rect:
         serializedVersion: 2
-        x: 355
-        y: 953
-        width: 71
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sprites_Marisa_6
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 953
-        width: 71
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sprites_Marisa_7
-      rect:
-        serializedVersion: 2
-        x: 497
-        y: 953
-        width: 71
-        height: 71
+        x: 368
+        y: 965
+        width: 46
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
