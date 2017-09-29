@@ -14,8 +14,9 @@ public class PlayerMovementControler : MonoBehaviour {
 
     void FixedUpdate ()
     {
-        var verticalInput = Input.GetAxis("Vertical");
-        var horizontalInput = Input.GetAxis("Horizontal");
+        //var verticalInput = Input.GetAxis("Vertical") * speed;
+        var verticalInput = 0f;
+        var horizontalInput = Input.GetAxis("Horizontal") * speed;
 
         rb.AddForce(new Vector3(horizontalInput, verticalInput));
     }
